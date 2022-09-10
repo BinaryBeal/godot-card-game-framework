@@ -8,7 +8,9 @@ extends "res://src/new_card_game/CardFront.gd"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	card_labels["Health"] = find_node("Health")
+	card_labels["Health"] = find_node("Health", true)
+	
+	original_font_sizes["Health"] = 15
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
