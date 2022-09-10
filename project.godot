@@ -249,7 +249,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/core/CardViewer/DeckBuilder/QuantityNumberButton.gd"
 }, {
-"base": "Reference",
+"base": "ScriptProperties",
 "class": "SP",
 "language": "GDScript",
 "path": "res://src/new_card_game/SP.gd"
@@ -289,7 +289,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/core/SelectionWindow.gd"
 }, {
-"base": "Reference",
+"base": "Node",
 "class": "SetPreload",
 "language": "GDScript",
 "path": "res://src/new_card_game/Cards/Sets/SetPreload.gd"

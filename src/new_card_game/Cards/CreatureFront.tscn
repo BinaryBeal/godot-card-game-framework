@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/icons/hearts.png" type="Texture" id=1]
+[ext_resource path="res://src/new_card_game/Cards/CreatureFront.gd" type="Script" id=2]
+[ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://src/new_card_game/CardFront.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=3]
+size = 15
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[node name="CreatureFront" instance=ExtResource( 4 )]
+script = ExtResource( 2 )
+
+[node name="Push" parent="Margin/CardText/HB" index="2"]
+margin_right = 94.0
+
+[node name="PowerIcon" parent="Margin/CardText/HB" index="3"]
+margin_left = 91.0
+margin_right = 106.0
+
+[node name="Power" parent="Margin/CardText/HB" index="4"]
+margin_left = 103.0
+margin_right = 120.0
+
+[node name="TextureRect" type="TextureRect" parent="Margin/CardText/HB" index="5"]
+margin_left = 117.0
+margin_right = 132.0
+margin_bottom = 19.0
+rect_min_size = Vector2( 15, 15 )
+mouse_filter = 2
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Health" type="Label" parent="Margin/CardText/HB" index="6"]
+margin_left = 129.0
+margin_right = 146.0
+margin_bottom = 19.0
+rect_min_size = Vector2( 15, 15 )
+custom_colors/font_color = Color( 0.658824, 0.541176, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "0"
+align = 2
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
