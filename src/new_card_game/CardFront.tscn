@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://src/custom/CGFCardFront.gd" type="Script" id=2]
+[ext_resource path="res://src/new_card_game/CardFront.gd" type="Script" id=2]
 [ext_resource path="res://themes/darktheme/darktheme.theme" type="Theme" id=3]
 [ext_resource path="res://assets/icons/fist.png" type="Texture" id=4]
 [ext_resource path="res://assets/icons/rupee.png" type="Texture" id=5]
